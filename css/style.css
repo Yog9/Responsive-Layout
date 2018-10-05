@@ -14,7 +14,7 @@ body {
 	background-color: #EBEBEB;
 }
 
-h1, h2, h3, p, a {
+ h2, h3, p, a {
 	font-family: 'PT Sans', sans-serif;
 	margin-bottom: 1em;
 }
