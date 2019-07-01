@@ -1,0 +1,355 @@
+
+
+/* ------------------------------------------ BASIC RULES --*/
+
+
+
+*{
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+}
+
+body {
+	background-color: #EBEBEB;
+}
+
+ h2, h3, p, a {
+	font-family: 'PT Sans', sans-serif;
+	margin-bottom: 1em;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	color: orange;
+}
+
+a {
+	color: #404040;
+	text-decoration: none;
+}
+
+
+/* ------------------------------------- CLASS SELECTORS ---*/
+
+
+
+.wrap {
+	width: 100%;
+}
+
+.top-name {
+	text-shadow: 1px 1px 1px #333;
+	letter-spacing: 4px;
+}
+
+.nav {
+	display: inline-block;
+	width: 100%;
+}
+
+.nav ul {
+	list-style-type: none;
+	background-color: #EBEBEB;
+	padding-left: 0;
+}
+
+.nav a {
+	display: inline-block;
+	font-size: 1.3em;
+	color: #404040;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #fff;
+	width: 90%;
+	margin: 5px;
+	margin-bottom: 5px;
+	padding: 0.5em 0 0.5em 0;
+	border-radius: 10px;
+}
+
+.nav a:hover ,.nav a :focus,.nav a :active{
+	color: #404040;
+	background-color: orange;
+	border-bottom: 3px solid red;
+}
+
+.intro {
+	width: 90%;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	margin: auto;
+}
+
+.intro p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1em;
+	text-shadow: 2px 2px 1px #bbb;
+}
+
+.profileIMG {
+ 	width: 30%;
+ 	border-radius: 50%;
+	border:solid 3px grey;
+}
+
+.portfolio-head {
+	padding-bottom: 20px;
+}
+
+.portfolio-card {
+	width: 100%;
+	margin-bottom: 1em;
+}
+.profileIMG
+ { 
+	
+	-webkit-box-shadow: 2px 10px 50px -26px rgba(0,0,0,0.74);
+	-moz-box-shadow: 2px 10px 50px -26px rgba(0,0,0,0.74);
+	box-shadow: 2px 10px 50px -26px rgba(0,0,0,0.74);
+	transition: all .2s ease-in-out; 
+}
+.profileIMG:hover ,.profileIMG:focus ,.profileIMG:active
+{
+	
+	transform: scale(1.1) rotate(360deg);
+}
+
+.card-image {
+	width: 95%;
+	padding-bottom: 0;
+	
+}
+.card-image {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.card-image:hover,.card-image:focus,.card-image:active {
+  border: 7px solid orange;
+  border-radius: 50%;
+}
+.portfolio {
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	width: 95%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.portfolio:hover,.portfolio:focus,.portfolio:active
+{
+	border:solid 2px black;
+}
+
+.portfolio-card p{
+	line-height:1em;
+	font-size:1em;
+	text-shadow: 2px 2px 7px rgba(150, 150, 150, 1);
+}
+.about {
+	width: 95%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 0 30px 0;
+}
+
+.about:hover,.about:focus,.about:active
+{
+	border:solid 2px black;
+}
+.about p {
+	margin: auto;
+	width: 85%;
+	padding-top: 20px;
+	font-size:1em;
+	text-shadow: 2px 2px 7px rgba(150, 150, 150, 1);
+}
+
+.yogita-picture {
+	width: 20%;
+	height: auto;
+	border-radius: 50%;
+	border: 5px solid grey;
+	transition: all .5s;
+}
+
+
+.yogita-picture:hover ,.yogita-picture:focus,.yogita-picture:active {
+  transform: scale(1.2) rotate(360deg);
+}
+    
+
+
+.contact {
+	margin: auto;
+	padding-top: 40px;
+	width: 75%;
+}
+
+.footer {
+	margin-top: 2em;
+	height: 4em;
+}
+
+.footname {
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+.footlink {
+	float: right;
+	margin-right: 5%;
+	margin-top: 20px;
+}
+
+.small-footer a:hover ,.small-footer a:focus,.small-footer a:active{
+		color: orange;
+	}
+.large-footer {
+	display: none;
+}
+
+
+
+
+/* -------------------------------------------- CLEARFIX ---*/
+
+
+
+.clearfix::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+
+
+/* ----------------------------- MEDIA QUERIES 768 PIXELS ---*/
+
+
+
+@media (min-width: 768px) {
+
+	.nav {
+		display: inline-block;
+		width: 100%;
+		margin: auto;
+	}
+
+	.nav ul {
+		margin-right: 20px;
+	}
+
+	.nav li {
+		display: inline-block;
+	}
+
+	.nav a {
+		margin: 0 1em 0 1em;
+		background-color: #EBEBEB;
+	}
+
+	.intro {
+		margin-top: 2em;
+		width: 90%;
+ 	}
+
+	.intro p {
+		font-size: 2em;
+	}
+
+	.profileIMG {
+		width: 30%;
+		float: right;
+		margin-left: 2em;
+		border:solid 8px grey;
+	}
+
+	.portfolio-head {
+		margin: 0.5em 0 1em 0;
+	}
+
+	.portfolio-card {
+		display: inline-block;
+		width: 49%;
+	}
+
+	.portfolio-card p {
+		font-size: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.large-footer {
+		display: inline-block;
+		margin-top: 20px;
+		float: right;
+		padding-right: 55px;
+	}
+
+	.large-footer a {
+		padding: 0 1em 0 1em;
+		text-transform: uppercase;
+	}
+
+	.large-footer a:hover ,.large-footer a:focus,.large-footer a:active{
+		color: orange;
+	}
+
+	.small-footer {
+		display: none;
+	}
+
+}
+
+
+
+/* ----------------------------- MEDIA QUERIES 1024 PIXELS ---*/
+
+
+
+@media (min-width: 1024px) {
+
+	.top-name {
+		float: left;
+		margin-top: 1em;
+		margin-left: 2em;
+	}
+
+	.nav ul {
+		float: right;
+		margin-top: -100px;
+		margin-right: 4em;
+	}
+
+	.nav li {
+		margin-top: 2em;
+	}
+
+	.portfolio-card {
+		display: inline-block;
+		width: 31%;
+	}
+
+	.portfolio-card p {
+		font-size: 1vw;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.profileIMG {
+	border:solid 8px grey;	
+	}
+
+}
